@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "TTHovesLight";
+    src: url("../fonts/TTHovesLight.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "TTHovesRegular";
+    src: url("../fonts/TTHovesRegular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TTHovesMedium";
+    src: url("../fonts/TTHovesMedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TTHovesBold";
+    src: url("../fonts/TTHovesBold.ttf");
+    font-weight: 700;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+#header {
+    position: absolute;
+    width: 100%;
+
+}
+
+.header__logo {
+    padding-top: 15px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+}
+
+.header__nav__item {
+    z-index: 999;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 20px;
+    transition: all .6s linear;
+}
+
+.header__nav__item:hover:before {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    background: #000;
+    margin: -8px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.header__nav__item:hover:after {
+    left: calc(100%);
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+
+/*HEADER*/

@@ -1,0 +1,33 @@
+@media (max-width:992px) {
+    .burger{
+        display: flex;
+        z-index: 999;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__nav.show {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        right: 0;
+        top: 0;
+        z-index: 4;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(36,27,237,0.28);
+
+    }
+    .show-menu{
+        transform: rotateX(45deg);
+        color: #FFFFFF;
+        background: transparent;
+    }
+    .header__nav__item{
+        color: #FFFFFF;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
